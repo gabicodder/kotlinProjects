@@ -24,6 +24,8 @@ class Shoe(name: String, description: String, sku: Int, var mark: String):
         return super.toString() + "SKU: ID: $sku\n Marca: $mark\n Modelo: $model\n Size: $size\nColor: $color\n"
     }
 
+
+
     init {
         println("SKU ID: $sku\n" +
                 "Marca: $mark")

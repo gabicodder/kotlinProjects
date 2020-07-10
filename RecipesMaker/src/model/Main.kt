@@ -2,26 +2,30 @@ package model
 
 fun main(args: Array<String>){
 
-    var category = Category()
+    var ingredient = Ingredients()
     var numero: Int = 0
     var opcion: String = ""
 
-    for (c in category.getCategoryList()){
-        println(c)
+    for (i in ingredient.getCategoryList()){
+        println(i)
      }
 
     numero = readLine()!!.toInt()
-
-    for ((index,c) in category.getCategoryList().withIndex()){
+    for ((index,c) in ingredient.getCategoryList().withIndex()){
         if (index+1 == numero)
-            opcion = c
+            opcion=c
     }
 
-     println(opcion)
+    println(opcion)
 
-    var ingredient = Ingredients(opcion)
+    for (j in ingredient.getIngredient(opcion)){
+            println(j)
+    }
+
+
+
     //println("${ingredient}")
-    for (i in ingredient.getIngredient()){
+    /*for (i in ingredient.getIngredient()){
         println(i)
-    }
+    }*/
 }

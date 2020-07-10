@@ -11,7 +11,7 @@ open class Category(){
             //getCategoryList()
     }
 
-    fun getCategoryList(): ArrayList<String>{
+   open fun getCategoryList(): ArrayList<String>{
 
         return arrayListOf("1. Frutas","2. Cereales", "3. Lacteos","4. Verduras","5. Carnes","6. Mariscos","7. Salir")
     }

@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <item
+        android:id="@+id/navHomeFragment"
+        android:title="Inicio"
+        android:icon="@drawable/ic_home"/>
+    <item
+        android:id="@+id/navMenuFragment"
+        android:title="Menú"
+        android:icon="@drawable/ic_menu"/>
+    <item
+        android:id="@+id/navOrderFragment"
+        android:title="Pedido"
+        android:icon="@drawable/ic_orders"/>
+    <item
+        android:id="@+id/navClientFragment"
+        android:title="Cliente"
+        android:icon="@drawable/ic_cliente"/>
+    <item
+        android:id="@+id/navInventoryFragment"
+        android:title="Inventario"
+        android:icon="@drawable/ic_inventory"/>
+</menu>

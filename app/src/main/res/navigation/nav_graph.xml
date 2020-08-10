@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/nav_graph"
+    app:startDestination="@id/navHomeFragment">
+
+    <fragment
+        android:id="@+id/navHomeFragment"
+        android:name="com.yum.yummyapp.view.ui.fragments.HomeFragment"
+        android:label="fragment_home"
+        tools:layout="@layout/fragment_home" >
+        <action
+            android:id="@+id/action_homeFragment_to_wait_MenuFragment"
+            app:destination="@id/wait_MenuFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/navMenuFragment"
+        android:name="com.yum.yummyapp.view.ui.fragments.MenuFragment"
+        android:label="fragment_menu"
+        tools:layout="@layout/fragment_menu" />
+    <fragment
+        android:id="@+id/wait_MenuFragment"
+        android:name="com.yum.yummyapp.view.ui.fragments.Wait_MenuFragment"
+        android:label="fragment_wait__menu"
+        tools:layout="@layout/fragment_wait__menu" >
+        <action
+            android:id="@+id/action_wait_MenuFragment_to_menuFragment"
+            app:destination="@id/navMenuFragment" />
+        <action
+            android:id="@+id/action_wait_MenuFragment_to_ordersFragment"
+            app:destination="@id/navOrderFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/navOrderFragment"
+        android:name="com.yum.yummyapp.view.ui.fragments.OrdersFragment"
+        android:label="fragment_orders"
+        tools:layout="@layout/fragment_orders" />
+</navigation>

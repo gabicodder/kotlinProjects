@@ -1,0 +1,228 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    tools:context=".view.ui.fragments.HomeFragment">
+
+    <com.google.android.material.appbar.AppBarLayout
+        android:id="@+id/apbHome"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <Toolbar
+            android:id="@+id/toolbarHome"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+
+                <TextView
+                    android:id="@+id/tvTitle"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="YummyApp"
+                    android:textColor="@android:color/white"
+                    android:textStyle="bold"
+                    android:textSize="26sp"
+                    android:layout_alignParentTop="true"
+                    android:layout_centerHorizontal="true">
+
+                </TextView>
+
+                <ImageButton
+                    android:layout_width="25dp"
+                    android:layout_height="25dp"
+                    android:layout_alignParentEnd="true"
+                    android:layout_alignTop="@id/tvTitle"
+                    android:layout_margin="8dp"
+                    android:background="@drawable/user"/>
+
+            </RelativeLayout>
+
+        </Toolbar>
+
+    </com.google.android.material.appbar.AppBarLayout>
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <ImageButton
+                android:id="@+id/imbVenta"
+                android:layout_width="50dp"
+                android:layout_height="50dp"
+                android:background="@drawable/money"
+                android:layout_below="@+id/apbHome"
+                android:layout_toRightOf="@id/tvTitleMenuHome"
+                android:layout_marginStart="100dp"
+                android:layout_marginTop="80dp"
+                tools:ignore="NotSibling" />
+
+            <TextView
+                android:id="@+id/tvTitleMenuHome"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Menú"
+                android:textSize="28sp"
+                android:textStyle="bold"
+                android:layout_marginTop="20dp"
+                android:layout_below="@id/imbVenta"
+                android:layout_centerHorizontal="true"/>
+            <TextView
+                android:id="@+id/tvFechaHome"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="24/07/2020"
+                android:textStyle="bold"
+                android:textSize="18sp"
+                android:layout_centerHorizontal="true"
+                android:layout_below="@id/tvTitleMenuHome"/>
+
+            <androidx.cardview.widget.CardView
+                android:id="@+id/crvHome"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_centerHorizontal="true"
+                android:layout_below="@id/tvFechaHome"
+                android:layout_marginTop="20dp"
+                android:layout_marginStart="20dp"
+                android:layout_marginEnd="20dp"
+                android:elevation="25dp"
+                app:cardCornerRadius="10dp">
+
+                <ScrollView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_margin="12dp">
+                    <TextView
+                        android:id="@+id/tvFirstHome"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Sopa .-"
+                        android:textStyle="bold"
+                        android:textSize="18sp"
+                        android:layout_alignParentTop="true"
+                        android:layout_marginStart="20dp"
+                        android:layout_marginTop="12dp"
+                        android:layout_marginBottom="20dp"/>
+
+                    <TextView
+                        android:id="@+id/tvOption1tHome"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@id/tvFirstHome"
+                        android:text="Opc 1 .-"
+                        android:textStyle="bold"
+                        android:textSize="18sp"
+                        android:layout_marginStart="20dp"
+                        android:layout_marginBottom="20dp"/>
+
+                    <TextView
+                        android:id="@+id/tvOption2tHome"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@id/tvOption1tHome"
+                        android:text="Opc 2 .-"
+                        android:textStyle="bold"
+                        android:textSize="18sp"
+                        android:layout_marginStart="20dp"
+                        android:layout_marginBottom="20dp"/>
+
+                    <TextView
+                        android:id="@+id/tvJuicetHome"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@id/tvOption2tHome"
+                        android:text="Jugo .-"
+                        android:textStyle="bold"
+                        android:textSize="18sp"
+                        android:layout_marginStart="20dp"
+                        android:layout_marginBottom="12dp"/>
+
+                    <TextView
+                        android:id="@+id/tvFirsDetailtHome"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Sopa de lentejas con carne"
+                        android:textStyle="italic"
+                        android:textSize="16sp"
+                       android:layout_toRightOf="@id/tvFirstHome"
+                        android:layout_alignTop="@id/tvFirstHome"
+                        android:layout_marginStart="30dp"
+                        android:layout_marginBottom="5dp"
+                        android:ellipsize="end"
+                        android:lines="1"/>
+
+                    <TextView
+                        android:id="@+id/tvOption1DetailtHome"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Pollo al horno con ensalada de fideo"
+                        android:textStyle="italic"
+                        android:textSize="16sp"
+                        android:layout_toRightOf="@id/tvFirstHome"
+                        android:layout_alignTop="@id/tvOption1tHome"
+                        android:layout_marginStart="30dp"
+                        android:layout_marginBottom="5dp"
+                        />
+
+                    <TextView
+                        android:id="@+id/tvOption2DetailtHome"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Yapingacho"
+                        android:textStyle="italic"
+                        android:textSize="16sp"
+                        android:layout_toRightOf="@id/tvFirstHome"
+                        android:layout_alignTop="@id/tvOption2tHome"
+                        android:layout_marginStart="30dp"
+                        android:layout_marginBottom="5dp"
+                        android:ellipsize="end"
+                        android:lines="1"/>
+
+                    <TextView
+                        android:id="@+id/tvJuiceDetailtHome"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Jugo de naranja"
+                        android:textStyle="italic"
+                        android:textSize="16sp"
+                        android:layout_toRightOf="@id/tvFirstHome"
+                        android:layout_alignTop="@id/tvJuicetHome"
+                        android:layout_marginStart="30dp"
+                        android:layout_marginBottom="12dp"
+                        android:ellipsize="end"
+                        android:lines="1"/>
+
+                </RelativeLayout>
+
+
+                </ScrollView>
+
+            </androidx.cardview.widget.CardView>
+
+            <ImageButton
+                android:layout_width="80dp"
+                android:layout_height="80dp"
+                android:layout_below="@id/crvHome"
+                android:layout_centerHorizontal="true"
+                android:layout_margin="80dp"
+                android:background="@drawable/whatsapp"/>
+
+        </RelativeLayout>
+
+    </ScrollView>
+
+</FrameLayout>

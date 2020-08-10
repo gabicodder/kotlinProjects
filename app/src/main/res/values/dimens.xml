@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <dimen name="title">28sp</dimen>
+    <dimen name="sub_title">18sp</dimen>
+    <dimen name="start_margin">12dp</dimen>
+    <dimen name="end_margin">12dp</dimen>
+    <dimen name="top_margin_title">20dp</dimen>
+    <dimen name="top_margin_subtitle">10dp</dimen>
+    <dimen name="height_ed_addOrder">30dp</dimen>
+</resources>

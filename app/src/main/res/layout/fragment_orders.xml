@@ -1,0 +1,91 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".view.ui.fragments.OrdersFragment">
+
+    <com.google.android.material.appbar.AppBarLayout
+        android:id="@+id/appBarOrder"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <Toolbar
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Detalle de Pedidos"
+                    android:textColor="@android:color/white"
+                    android:textSize="22sp"
+                    android:layout_margin="8dp"
+                    android:textStyle="bold"
+                    android:layout_weight="4"/>
+                <ImageButton
+                    android:id="@+id/imbShowOrder"
+                    android:layout_width="15dp"
+                    android:layout_height="30dp"
+                    android:background="@drawable/ic_show"
+                    android:layout_margin="8dp"
+                    android:layout_weight="1"/>
+
+                <ImageButton
+                    android:id="@+id/imbSearchOrder"
+                    android:layout_width="15dp"
+                    android:layout_height="30dp"
+                    android:background="@drawable/ic_search"
+                    android:layout_margin="8dp"
+                    android:layout_weight="1"/>
+
+                <ImageButton
+                    android:id="@+id/imbAddOrder"
+                    android:layout_width="15dp"
+                    android:layout_height="30dp"
+                    android:background="@drawable/ic_add"
+                    android:layout_margin="8dp"
+                    android:layout_weight="1"
+                    />
+
+            </LinearLayout>
+
+        </Toolbar>
+
+    </com.google.android.material.appbar.AppBarLayout>
+
+            <androidx.recyclerview.widget.RecyclerView
+                android:id="@+id/rvOrder"
+                android:layout_marginTop="60dp"
+                android:layout_marginStart="8dp"
+                android:layout_marginEnd="8dp"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"/>
+
+        <RelativeLayout
+            android:id="@+id/rlBaseOrder"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:background="@color/colorPrimaryDark"
+                android:alpha="0.2"/>
+
+            <ProgressBar
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerInParent="true"/>
+
+        </RelativeLayout>
+
+    </FrameLayout>
+
+
